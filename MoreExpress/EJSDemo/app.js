@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
 
+app.get('/', function(req, res) {
+
+  res.render('home.js')
+});
 
 app.get('/fallinginlovewith/:thing', function(req, res) {
   var thing = req.params.thing;
